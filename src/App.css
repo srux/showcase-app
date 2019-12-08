@@ -1,0 +1,144 @@
+.col1 {
+  background-color: #590404;
+}
+
+.col2 {
+  background-color: #2A5559;
+}
+
+.wrap {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+
+.webWorkMobileTilt {
+  font-size: 1em;
+}
+
+.mobContainer {
+  -webkit-transition: ease all .1s;
+  transition: ease all .1s;
+}
+
+.noPointer {
+  pointer-events: none;
+}
+
+.cover {
+  z-index: 9;
+  height: 0%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+
+.active {
+  z-index: 9;
+  height: 100%;
+  opacity: 1;
+}
+
+.col1oneExpand {
+  padding: 0%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 70%;
+          flex: 1 0 70%;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: ease all 2s;
+  transition: ease all 2s;
+  z-index: 99;
+}
+
+.col1oneExpand .mobContainer {
+  font-size: 1.5em;
+}
+
+.col2twoExpand {
+  z-index: 99;
+  padding: 0%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 70%;
+          flex: 1 0 70%;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: ease all 2s;
+  transition: ease all 2s;
+}
+
+.col2twoExpand .mobContainer {
+  font-size: 1.5em;
+}
+
+.inapp-mobile {
+  width: 100%;
+  height: 40em;
+  font-size: 0.8em;
+  border: none;
+}
+
+.webWorkMobile {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-box-shadow: 0.7em 0.6em 2em 0.4em rgba(0, 0, 0, 0.25);
+          box-shadow: 0.7em 0.6em 2em 0.4em rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin-left: 0vw;
+  min-width: 10em;
+  width: 18em;
+  height: 32em;
+  padding: 4.24em  1em 5em 1em;
+  background-image: url("assets/mobile.png");
+  background-size: cover;
+  border-radius: 3em;
+}
+
+.webWorkMobile .webWorkInner {
+  border-bottom: 2px solid black;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.webWorkMobile h1 {
+  position: absolute;
+  margin-top: -1.3em;
+  font-size: 3.4em;
+  border-bottom: thin solid #cdcdcd;
+  color: #27b6c3;
+  line-height: .7em;
+}
+/*# sourceMappingURL=App.css.map */
