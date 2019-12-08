@@ -12,7 +12,6 @@
 .container {
     display:flex;
     flex:1 0 50%;
-    overflow:hidden;
 }
 .container.open {
     height: 0;

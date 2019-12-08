@@ -35,7 +35,7 @@ setTimeout(() => {
   this.setState({
     cover:'',
   })
-}, 1000)
+}, 700)
 
     // window.location.reload(false);
  
