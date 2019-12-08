@@ -1,0 +1,22 @@
+.col1 .mobContainer {
+    transform: rotate(-13deg);
+    transition:ease all 4s;
+}
+
+
+.col2 .mobContainer {
+    transform: rotate3d(5, 2, 7, -36deg) translate(1em, 0px) scale(1.05);
+    transition:ease all 4s;
+    
+}
+
+
+.col4 .mobContainer {
+    transform: translate(8.6em, 4.6em) scale(0.89);
+    transition: ease all 4s;
+    z-index: 1;
+}
+
+.transitionNone {
+    transition:ease all 0s !important;
+}

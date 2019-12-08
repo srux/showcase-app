@@ -1,15 +1,35 @@
 .col1 {
-    background-color:#590404;
+
+    background-image:url('assets/background1.jpg');
+    background-repeat: no-repeat;
+    background-position-y: -6em;
+    background-size: 51.6em;
+    background-position-x: center;
 }
 
 .col2 {
-    background-color:#2A5559;
+    background-image:url('assets/background2.jpg');
+    background-repeat: no-repeat;
+    background-position-y: -6em;
+    background-position-x:center ;
+    background-size: 51.5em;
+    // box-shadow:0em -1em 2em 1em #0000008c;
 }
 
 .col3 {
 
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-position-x:center ;
+    background-size: 51.5em;
+ 
 }
 
 .col4 {
+    background-image:url('assets/background3.jpg');
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-position-x:center ;
+    background-size: 51.5em;
 
 }
