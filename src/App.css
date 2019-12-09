@@ -49,6 +49,7 @@
           transform: rotate(-13deg);
   -webkit-transition: ease all 4s;
   transition: ease all 4s;
+  display: initial;
 }
 
 .col2 .mobContainer {
@@ -56,12 +57,23 @@
           transform: rotate3d(5, 2, 7, -36deg) translate(1em, 0px) scale(1.05);
   -webkit-transition: ease all 4s;
   transition: ease all 4s;
+  display: initial;
 }
 
 .col3 .mobContainer {
   font-size: 0.81em;
   -webkit-transform: translateY(6.7em) rotate3d(12, 29, 0, 8deg);
           transform: translateY(6.7em) rotate3d(12, 29, 0, 8deg);
+  display: initial;
+}
+
+.col4 .mobContainer {
+  -webkit-transform: translate(8.6em, 4.6em) scale(0.89);
+          transform: translate(8.6em, 4.6em) scale(0.89);
+  -webkit-transition: ease all 4s;
+  transition: ease all 4s;
+  z-index: 1;
+  display: initial;
 }
 
 .col3 .webWork {
@@ -83,14 +95,6 @@
   font-size: 1em;
   -webkit-transform: translateX(46em);
           transform: translateX(46em);
-}
-
-.col4 .mobContainer {
-  -webkit-transform: translate(8.6em, 4.6em) scale(0.89);
-          transform: translate(8.6em, 4.6em) scale(0.89);
-  -webkit-transition: ease all 4s;
-  transition: ease all 4s;
-  z-index: 1;
 }
 
 .transitionNone {
@@ -165,6 +169,7 @@
 .mobContainer {
   -webkit-transition: ease all 1s;
   transition: ease all 1s;
+  display: none;
 }
 
 .noPointer {
@@ -221,6 +226,9 @@
 }
 
 .col1oneExpand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 0%;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
@@ -234,9 +242,13 @@
 
 .col1oneExpand .mobContainer {
   font-size: 1.5em;
+  display: initial;
 }
 
 .col2twoExpand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 99;
   padding: 0%;
   -webkit-box-flex: 1;
@@ -250,9 +262,13 @@
 
 .col2twoExpand .mobContainer {
   font-size: 1.5em;
+  display: initial;
 }
 
 .col3threeExpand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 99;
   padding: 0%;
   -webkit-box-flex: 1;
@@ -272,6 +288,7 @@
 
 .col3threeExpand .mobContainer {
   font-size: 1em;
+  display: initial;
 }
 
 .col3threeExpand .webWork {
@@ -292,6 +309,9 @@
 }
 
 .col4fourExpand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 99;
   padding: 0%;
   -webkit-box-flex: 1;
@@ -311,6 +331,7 @@
 
 .col4fourExpand .mobContainer {
   font-size: 1em;
+  display: initial;
 }
 
 .col4fourExpand .webWork {

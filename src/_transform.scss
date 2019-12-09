@@ -1,19 +1,33 @@
+
+
 .col1 .mobContainer {
     transform: rotate(-13deg);
     transition:ease all 4s;
+    display: initial;
 }
 
 
 .col2 .mobContainer {
     transform: rotate3d(5, 2, 7, -36deg) translate(1em, 0px) scale(1.05);
     transition:ease all 4s;
-    
+    display: initial;
 }
 
 .col3 .mobContainer {
     font-size: 0.81em;
     transform: translateY(6.7em) rotate3d(12, 29, 0, 8deg);
+    display: initial;
 }
+
+
+.col4 .mobContainer {
+    transform: translate(8.6em, 4.6em) scale(0.89);
+    transition: ease all 4s;
+    z-index: 1;
+    display: initial;
+}
+
+
 
 .col3 .webWork {
     transform: translate(-7em,2em) rotate(-3deg) scale(.9);
@@ -35,13 +49,6 @@
 .col3threeExpand .mobContainer {
     font-size: 1em;
     transform: translateX(46em);
-}
-
-
-.col4 .mobContainer {
-    transform: translate(8.6em, 4.6em) scale(0.89);
-    transition: ease all 4s;
-    z-index: 1;
 }
 
 
