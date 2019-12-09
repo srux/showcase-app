@@ -22,7 +22,22 @@
     background-position-y: 0;
     background-position-x:center ;
     background-size: 51.5em;
- 
+    background-color:rgb(38, 51, 53);
+}
+
+.mj {
+    background-image: url("assets/mj-site.jpg");
+    height: 105em;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+
+.mj-m {
+    background-image: url("assets/mj-m-site.jpg");
+    height: 170em;
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 
 .col4 {

@@ -10,6 +10,33 @@
     
 }
 
+.col3 .mobContainer {
+    font-size: 0.81em;
+    transform: translateY(6.7em) rotate3d(12, 29, 0, 8deg);
+}
+
+.col3 .webWork {
+    transform: translate(-7em,2em) rotate(-3deg) scale(.9);
+}
+
+
+
+.col3threeExpand .webWork {
+    transform: translateX(3em);
+}
+
+
+.col3threeExpand .webWork:hover {
+    transform: translateX(5em);
+}
+
+
+
+.col3threeExpand .mobContainer {
+    font-size: 1em;
+    transform: translateX(46em);
+}
+
 
 .col4 .mobContainer {
     transform: translate(8.6em, 4.6em) scale(0.89);
@@ -17,6 +44,9 @@
     z-index: 1;
 }
 
+
+
 .transitionNone {
     transition:ease all 0s !important;
 }
+
