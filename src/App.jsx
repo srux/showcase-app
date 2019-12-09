@@ -289,7 +289,7 @@ class App extends Component {
                     autoHideTimeout={1000}
                     autoHideDuration={200}>
 
-                    <div className="webImage mj">
+                    <div className="webImage">
                       <Iframe url="https://new.wearenomad.nz/"
 
                         id="inapp-mobile"
