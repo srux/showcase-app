@@ -77,8 +77,8 @@
 }
 
 .col3 .webWork {
-  -webkit-transform: translate(-7em, 2em) rotate(-3deg) scale(0.9);
-          transform: translate(-7em, 2em) rotate(-3deg) scale(0.9);
+  -webkit-transform: translate(-7em, 2em) scale(0.9);
+          transform: translate(-7em, 2em) scale(0.9);
 }
 
 .col3threeExpand .webWork {
@@ -102,9 +102,166 @@
   transition: ease all 0s !important;
 }
 
+.item1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #500000;
+}
+
+.item1 .i1 {
+  margin-top: 5em;
+  padding-right: 10vw;
+}
+
+.item1 .i1 p {
+  text-align: right;
+}
+
+.item1 .i1 h1 {
+  text-align: right;
+  padding: .15em;
+}
+
+.item1 .i2 {
+  padding-left: 10vw;
+  margin-top: 30em;
+}
+
+.item2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0e3850;
+}
+
+.item2 .i1 {
+  margin-top: 5em;
+  padding-right: 10vw;
+}
+
+.item2 .i1 p {
+  text-align: right;
+}
+
+.item2 .i1 h1 {
+  text-align: right;
+  padding: .15em;
+}
+
+.item2 .i2 {
+  padding-left: 10vw;
+  margin-top: 30em;
+}
+
+.item3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.item4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info h1 {
+  font-family: roboto;
+  font-weight: 400;
+}
+
+.info p {
+  margin: .4em;
+  font-family: roboto;
+  font-weight: 300;
+  line-height: 1.2;
+  font-size: 1.1em;
+}
+
+.item {
+  opacity: 0;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.showinfo {
+  opacity: 1;
+}
+
 .wrap {
   height: 100vh;
   overflow-x: hidden;
+}
+
+.logo-container {
+  margin-bottom: -9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo-container img {
+  -webkit-transform: translate(2em, 2em);
+          transform: translate(2em, 2em);
+  width: 8em;
+  position: relative;
+  border-radius: .5em;
+  z-index: 999999999999999;
+  background: #ffffff;
 }
 
 .container {
@@ -183,29 +340,37 @@
   background-color: white;
   position: absolute;
   opacity: 0;
-  -webkit-transition: ease all 1s;
-  transition: ease all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .close {
+  margin-top: .7em;
   display: none;
   background-color: #f5f4f4;
-  font-size: 2em;
-  padding: .4em;
+  font-size: 2.5em;
+  padding: .3em;
+  padding-bottom: .1em;
+  padding-right: .7em;
   border-radius: 0.2em;
   width: 1.1em;
   cursor: pointer;
   -webkit-transition: ease all .7s;
   transition: ease all .7s;
   position: absolute;
+  right: 0;
 }
 
 .closeactive {
+  right: 0;
+  margin-top: .7em;
   display: initial;
   z-index: 9999;
   background-color: #f5f4f4;
-  font-size: 2em;
-  padding: .4em;
+  font-size: 2.5em;
+  padding: .3em;
+  padding-bottom: .1em;
+  padding-right: .7em;
   border-radius: 0.2em;
   width: 1.1em;
   cursor: pointer;

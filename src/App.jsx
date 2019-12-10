@@ -5,6 +5,7 @@ import Iframe from 'react-iframe';
 import Tilt from 'react-tilt';
 import { Scrollbars } from 'react-custom-scrollbars';
 import { IoMdClose } from "react-icons/io";
+import logo from './assets/SRUX-LOGO.svg';
 
 class App extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class App extends Component {
       lock: 'noPointer',
       containerStateOne:'',
       containerStateTwo:'',
+      showinfo:'',
     }
   }
 
@@ -30,6 +32,7 @@ class App extends Component {
         lock: 'noPointer transitionNone',
         containerStateOne:'',
         containerStateTwo:'',
+        showinfo:'',
       })
     }, 100)
     setTimeout(() => {
@@ -55,6 +58,11 @@ class App extends Component {
         cover: 'active',
         lock: '',
       })
+      setTimeout(() => {
+        this.setState({
+            showinfo:'showinfo',
+        })
+    }, 2000)
     }
     else {
       this.setState({
@@ -77,6 +85,11 @@ class App extends Component {
       cover: 'active',
       lock: '',
     })
+    setTimeout(() => {
+      this.setState({
+          showinfo:'showinfo',
+      })
+  }, 2000)
   }
     else {
       this.setState({
@@ -87,15 +100,41 @@ class App extends Component {
   }
 
   render() {
-    let { colExpand, wrapState, cover, lock,containerStateOne,containerStateTwo } = this.state;
+    let { colExpand, wrapState, cover, lock,containerStateOne,containerStateTwo,showinfo } = this.state;
+    let itemState = this.state.colExpand;
 
     return (
       <div className="App">
+   
         <div className={"close" + cover} onClick={this.resetClick}><IoMdClose /></div>
         <div className={"cover " + cover}>
-
+          
+            { itemState=='oneExpand set' ? (<div className={"item1 item "+showinfo}>
+              <div className="info i1"><h1>Trip Adviser App</h1><p>Step by step guide for your Wanaka travel plans.</p><p>Travel calculator + useful information on accommodation & things to do</p></div>
+              <div className="info i2"><p>Plan ahead with the Wanaka Trip Adviser App.</p><p>Select the number of days you plan on travelling, the number of people going, the type of vehicle you wish to rent & your itinerary.</p><p>The App will do the rest, calculating the cost of the rentals & an estimated fuel consumption cost.</p></div>
+              </div>) : 
+            (<></>) }
+            { itemState=='twoExpand set' ? (
+            <div className={"item2 item "+showinfo}>
+              <div className="info i1"><h1>Online Shop App</h1><p>The store stocks new & second hand trade in's.<br></br> listing is then checked, verified & accepted by the store.</p><p>We were required to design & develop the App using React along with with a fully functioning API & server.</p></div>
+              <div className="info i2"><p>The app has a full CRUD process from the user being able to register, login, sell, purchase, review, edit account details & edit or delete their products.</p></div>
+            </div>) : (<></>)}
+            { itemState=='threeExpand set' ? (
+            <div className={"item3 item "+showinfo}>
+              <div className="info i1"><h1>Mitchell's Joinery</h1></div>
+              <div className="info i2"><p>The team over at Mitchell's Joinery required a new brand design along with a website upgrade to a more modern and intuitive UX design.<br></br>Mitchell's Joinery main focus was on the marine industry.</p><p>The new logo and website required a more premium design along with a more logical catagory / navigation hirechy.</p>
+              </div>
+            </div>):(<></>)}
+            { itemState=='fourExpand set' ? (
+            <div className={"item4 item "+showinfo}>
+               <div className="info i1"><h1>NOMAD WordPress Theme</h1></div>
+              <div className="info i2"><p>Designer Textile E-Commerce Website & CMS solution.</p><p>SEO evaluation of current content.
+- 3 page design Home, Contact, Shop) - E-commerce solution, shop, categories, products, cart, checkout, orders</p></div>
+            </div>) :(<></>)}
+            
         </div>
         <div className={"wrap " + wrapState}>
+        <div className="logo-container"><a href="http://www.samrobertson.nz" target="_blank"><img src={logo} alt=""/></a></div>
           <div className={"container " + containerStateOne}>
 
             <div id={"oneExpand set"} onClick={e => this.colClick(e)} className={"col col1" + colExpand}>
@@ -119,7 +158,7 @@ class App extends Component {
                       autoHideTimeout={1000}
                       autoHideDuration={200}>
 
-                      <div className="webImage inapp-m"><Iframe url="http://sam.robertson.yoobee.net.nz/Wanaka%20Tourism%20Trip%20Adviser%20App/index.html"
+                      <div className="webImage inapp-m"><Iframe url="https://srux.github.io/wanakaApp/"
 
                         id="inapp-mobile"
                         className="inapp-mobile"

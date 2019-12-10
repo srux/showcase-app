@@ -1,6 +1,7 @@
 
 @import "_colours.scss";
 @import "_transform.scss";
+@import "_info.scss";
 
 .wrap {
 
@@ -8,6 +9,20 @@
     overflow-x: hidden;
 
 }
+.logo-container {
+
+    margin-bottom: -9em;
+    display: flex;
+    img {
+        transform:translate(2em,2em);
+        width: 8em;
+        position: relative;
+        border-radius: .5em;
+        z-index: 999999999999999;
+        background: #ffffff;
+    }
+}
+
 
 .container {
     display:flex;
@@ -79,26 +94,35 @@
     background-color:white;
     position: absolute;
     opacity:0;
-    transition:ease all 1s;
+    transition:all 1s;
+
 }
 
 .close {
+    margin-top:.7em;
     display:none;
     background-color: #f5f4f4;
-    font-size: 2em;
-    padding: .4em;
+    font-size: 2.5em;
+    padding: .3em;
+    padding-bottom:.1em;
+    padding-right:.7em;
     border-radius: 0.2em;
     width: 1.1em;
     cursor: pointer;
     transition: ease all .7s;
     position: absolute;
+    right:0;
 }
 .closeactive {
+    right:0;
+    margin-top:.7em;
     display:initial;
     z-index: 9999;
     background-color: #f5f4f4;
-    font-size: 2em;
-    padding: .4em;
+    font-size: 2.5em;
+    padding: .3em;
+    padding-bottom:.1em;
+    padding-right:.7em;
     border-radius: 0.2em;
     width: 1.1em;
     cursor: pointer;
